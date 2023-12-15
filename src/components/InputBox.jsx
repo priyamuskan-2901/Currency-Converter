@@ -2,7 +2,7 @@ import React, {useId} from 'react'
 
 function InputBox({
     label,
-    amount,
+    Amount,
     onAmountChange,
     onCurrencyChange,
     currencyOptions = [],
@@ -23,9 +23,9 @@ function InputBox({
                     id={amountInputId}
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
-                    placeholder="Amount"
+                    placeholder="0"
                     disabled={amountDisable}
-                    value={amount}
+                    value={Amount}
                     onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
                 />
             </div>
